@@ -1,5 +1,5 @@
 import Container from "@/components/Container";
-import HomeBanner from "@/components/HomeBanner";
+import HomeSlider from "@/components/HomeSlider";
 import HomeCategories from "@/components/HomeCategories";
 import LatestBlog from "@/components/LatestBlog";
 import ProductGrid from "@/components/ProductGrid";
@@ -13,7 +13,7 @@ const Home = async () => {
 
   return (
     <Container className="bg-shop-light-pink">
-      <HomeBanner />
+      <HomeSlider />
       <ProductGrid />
       <HomeCategories categories={categories} />
       <ShopByBrands />
