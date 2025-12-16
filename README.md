@@ -1,36 +1,93 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShopCartYT - E-commerce Application
 
-## Getting Started
+A modern e-commerce application built with Next.js 15, Sanity CMS, Clerk Authentication, and Stripe Payments.
 
-First, run the development server:
+## 🚀 Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Framework:** [Next.js 15](https://nextjs.org/) (App Router)
+- **CMS:** [Sanity](https://www.sanity.io/)
+- **Authentication:** [Clerk](https://clerk.com/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components:** [Shadcn/ui](https://ui.shadcn.com/) (Radix UI)
+- **State Management:** [Zustand](https://zustand-demo.pmnd.rs/)
+- **Payments:** [Stripe](https://stripe.com/)
+- **Icons:** [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 🛍️ **Product Catalog:** Managed via Sanity CMS
+- 🔐 **Authentication:** Secure user sign-up and sign-in with Clerk
+- 🛒 **Shopping Cart:** Client-side cart management using Zustand
+- 💳 **Checkout:** Secure payments integration with Stripe
+- 🎨 **Responsive Design:** Beautiful UI with Tailwind CSS and Framer Motion animations
+- 🌗 **Modern UI:** Accessible components powered by Radix UI
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (v18 or later)
+- npm, yarn, pnpm, or bun
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+   ```bash
+   git clone <repository-url>
+   cd e-shop
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
+
+3. **Environment Variables:**
+
+   Create a `.env` file in the root directory and add the necessary environment variables for Sanity, Clerk, and Stripe.
+
+   ```env
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
+   CLERK_SECRET_KEY=your_clerk_secret
+
+   NEXT_PUBLIC_SANITY_PROJECT_ID=your_sanity_project_id
+   NEXT_PUBLIC_SANITY_DATASET=your_sanity_dataset
+
+   STRIPE_SECRET_KEY=your_stripe_secret_key
+   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=your_stripe_publishable_key
+   ```
+
+4. **Run the development server:**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## 📜 Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run typegen` - Generate Sanity schema types
+
+## 📂 Project Structure
+
+- `/app` - Next.js App Router pages and layouts
+- `/components` - Reusable UI components
+- `/sanity` - Sanity CMS configuration and schemas
+- `/lib` - Utility functions
+- `/store.ts` - Zustand state store
+- `/actions` - Server actions
+
+## 📄 License
+
+This project is licensed under the MIT License.
